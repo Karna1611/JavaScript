@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Checkbox Demo</title>
+    </head>
+    <body>
+        <h1>Checkbox lab -1</h1>
+        <h2>Application platform</h2>
+        <table>
+            <tr>
+                <td>
+                    <input type="checkbox" id="check1" value="Mobile">
+                    <label for="check1">Mobile</label>
+                    <input type="checkbox" id="check2" value="Web">
+                    <label for="check2">Web</label>
+                    <input type="checkbox" id="check3" value="Desktop">
+                    <label for="check3">Desktop</label>    
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="submit" id="btn1" onclick="submitSelection()">Submit selection</button>
+                    <button type="reset" id="btn2" onclick="clearSelection()">Clear selection</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Selection is: 
+                    <input type="text" id="txt1" readonly>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button type="button" id="btn3" onclick="selectAll()">Select all</button>
+                    <button type="button" id="btn4" onclick="deselectAll()">Deselect all</button>
+                    <button type="button" id="btn5" onclick="invertAll()">Invert all</button>
+                </td>
+            </tr>
+
+        </table>
+        <script src="check1.js"></script>
+    </body>
+    </html>
