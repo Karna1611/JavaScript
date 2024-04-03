@@ -48,3 +48,46 @@ function showResult(){
         console.log("Error: Input elements not found in the DOM");
     }
 }
+
+function showAngle(){
+    let a=document.getElementById('angle1');
+    let b=document.getElementById('angle2');
+    let c=document.getElementById('angle3');
+    let d=document.getElementById('txt3');
+
+    if(a!==null && b!=null && c!=null && d!=null){
+        let first=+(a.value);
+        let second=+(b.value);
+        let third=+(c.value);
+
+        if(!isNaN(first) && !isNaN(second) && !isNaN(third)){
+            if(first<90 && second<90 && third<90){
+                    if(first+second+third==180){
+                        d.value='Acute angle triangle';
+                    }
+                    else{
+                        d.value='Not 180';
+                    }
+            }
+            else if(first==90 || second==90 || third==90){
+                if(first+second+third==180){
+                    d.value='Right angle triangle';
+                }
+                else{
+                    d.value='Not 180';
+                }
+            }
+            else if(first>90 || second>90 || third>90){
+                if(first+second+third==180){
+                    d.value='Obtuse angle triangle';
+                }
+                else{
+                    d.value='Not 180';
+                }
+            }
+        }
+    }
+    else{
+        console.log("Error: Input elements not found in the DOM");
+    }
+}

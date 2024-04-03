@@ -5,12 +5,43 @@
 </head>
 <body>
     <h2>Triangle</h2>
-    <input type="number" placeholder="Enter first side length" id="side1" required> <br> <br>
-    <input type="number" placeholder="Enter second side length" id="side2" required> <br> <br>
-    <input type="number" placeholder="Enter third side length" id="side3" required> <br> <br>
-    <button type="submit" id="btn1" onclick="showResult()"> Submit </button> <br> <br>
-    <input type="text" id="txt1" readonly> <br> <br>
-    <input type="text" id="txt2" readonly>
+    <table>
+        <tr>
+            <td>
+                <input type="number" placeholder="Enter first side length" id="side1" required> 
+                <input type="number" placeholder="Enter second side length" id="side2" required> 
+                <input type="number" placeholder="Enter third side length" id="side3" required> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" id="btn1" onclick="showResult()"> Submit </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="txt1" readonly>
+                <input type="text" id="txt2" readonly>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" placeholder="Enter first angle" id="angle1" required>
+                <input type="number" placeholder="Enter second angle" id="angle2" required>
+                <input type="number" placeholder="Enter third angle" id="angle3" required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="submit" id="btn2" onclick="showAngle()">Click me!</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="txt3" readonly>
+            </td>
+        </tr>
+    </table>
     <script src="triangles.js"></script>
 </body>
 </html>
