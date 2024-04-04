@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Collinear Points</title>
+    </head>
+    <body>
+        <h2>Collinear point program</h2>
+        <table>
+            <tr>
+                <td>
+                    Point 1:
+                    <input type="number" id="x1" placeholder="Enter x1 co-ordinates" required>
+                    <input type="number" id="y1" placeholder="Enter y1 co-ordinates" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Point 2:
+                    <input type="number" id="x2" placeholder="Enter x2 co-ordinates" required>
+                    <input type="number" id="y2" placeholder="Enter y2 co-ordinates" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Point 3:
+                    <input type="number" id="x3" placeholder="Enter x3 co-ordinates" required>
+                    <input type="number" id="y3" placeholder="Enter y3 co-ordinates" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" id="btn1" onclick="checkLinear()">Click me!</button>
+                    <button type="reset" id="btn2" onclick="resetVal()">Reset co-ordinates</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="txt1" placeholder="Result will be displayed here" readonly>
+                </td>
+            </tr>
+        </table>
+        <script src="collinear.js"></script>
+    </body>
+    </html>

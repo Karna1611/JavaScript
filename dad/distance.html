@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Distance formula</title>
+    </head>
+    <body>
+        <h2>Program to calculate distance formula</h2>
+        <table>
+            <tr>
+                <td>
+                    Enter Point 1 co-ordinates:
+                    <input type="number" id="x1" placeholder="x1 co-ordinate" required>
+                    <input type="number" id="y1" placeholder="y1 co-ordinate" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Enter Point 2 co-ordinates:
+                    <input type="number" id="x2" placeholder="x2 co-ordinate" required>
+                    <input type="number" id="y2" placeholder="y2 co-ordinate" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" id="btn1" onclick="calculateDistance()">Calculate distance!</button>
+                    <button type="reset" id="btn2" onclick="resetVal()">Reset!</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="txt1" placeholder="Result will be displayed here" readonly>
+                </td>
+            </tr>
+        </table>
+        <script src="distance.js"></script>
+    </body>
+    </html>
