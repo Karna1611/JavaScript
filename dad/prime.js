@@ -1,11 +1,11 @@
 let txtAreaVal2=document.getElementById('textAr2');
+let txtVal2=document.getElementById('txt2');
 function displayResult() {
     let no = document.getElementById('num1');
     let txtAreaVal = document.getElementById('textAr1');
     let noOfFactors = document.getElementById('num2');
     let txtVal=document.getElementById('txt1');
     let list=document.getElementById('factorList');
-    
 
     if (no !== null && noOfFactors !== null && txtAreaVal !== null && txtVal!==null && txtAreaVal2!==null) {
         let number = +(no.value);
@@ -15,14 +15,12 @@ function displayResult() {
             txtAreaVal.value = ''; 
 
             for (let i = 1; i <= number; i++) { 
-                debugger;
                 if (number % i == 0) {
                     txtAreaVal.value += i + '\n';
                     factors++;
                 }
             }
             noOfFactors.value=noOfFactors1(number);
-            // debugger;
             let a=isPrime(number);
             if(a==true)
             {
@@ -31,7 +29,6 @@ function displayResult() {
             else{
                 txtVal.value='Non prime number';
             }
-            //txtVal.value=isPrime(number);
             for(let j=1;j<=number;j++){
                 if(number%j==0){
                 let li=document.createElement('li');
@@ -39,7 +36,6 @@ function displayResult() {
                 list.appendChild(li);
                 }
             }
-
         } 
         else {
             txtAreaVal.value = 'Invalid input'; 
@@ -81,7 +77,7 @@ function isPrime(value){
             return true;
         }
     }
-    //return result;
+
  function printPrime(){
     for(let i=2;i<=20;i++){
         let a=isPrime(i);
@@ -89,3 +85,24 @@ function isPrime(value){
             txtAreaVal2.value+=i+"\n";
     }
  }
+
+ function test(){
+    let x=nextPrime(7);
+    alert(x);
+    let y=nextP(7);
+    alert(y);
+ }
+
+ function nextPrime(value) {
+    if (value <= 1) {
+        return 2;
+    }
+    
+    let prime = value + 1; 
+    
+    while (isPrime(prime)==false) {
+        prime++;
+    }
+    return prime;
+}
+

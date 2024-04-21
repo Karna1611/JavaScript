@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            /* #board {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 5px;
+            }
+
+            .cell {
+            font-size: 24px;
+            width: 100px;
+            height: 100px;
+            } */
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                width: 300px;
+            }
+            .cell {
+                width: 100px;
+                height: 100px;
+                font-size: 24px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <center><h3>Click button for X or O </h3></center>
+        <div class="container" id="container">
+            <button class="cell" id="btn1" onclick="checkEvent(event)"> </button>  
+            <button class="cell" id="btn2" onclick="checkEvent(event)"> </button> 
+            <button class="cell" id="btn3" onclick="checkEvent(event)"> </button> 
+            <button class="cell" id="btn4" onclick="checkEvent(event)"> </button> 
+            <button class="cell" id="btn5" onclick="checkEvent(event)"> </button> 
+            <button class="cell" id="btn6" onclick="checkEvent(event)"> </button> 
+            <button class="cell" id="btn7" onclick="checkEvent(event)"> </button> 
+            <button class="cell" id="btn8" onclick="checkEvent(event)"> </button> 
+            <button class="cell" id="btn9" onclick="checkEvent(event)"> </button> 
+        </div> 
+        <script src="button.js"></script> 
+    </body>
+    </html>
